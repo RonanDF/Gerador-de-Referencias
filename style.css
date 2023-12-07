@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.options label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.options select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.forms {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reference-form {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.reference-form:hover {
+    background-color: #f5f5f5;
+}
+
+.reference-form h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.reference-form label {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+}
+
+.reference-form input, .reference-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reference-form button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reference-form button:hover {
+    background-color: #45a049;
+}
+
+#output-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#output {
+    width: 80%;
+    height: 100px;
+    resize: none;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Referências</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerador de Referências Bibliográficas</h1>
+        </header>
+
+        <div class="options">
+            <label for="referenceType">Escolha o tipo de referência:</label>
+            <select id="referenceType">
+                <option value="book">Referência de Livro</option>
+                <option value="site">Referência de Site</option>
+                <option value="article">Referência de Artigo de Revista</option>
+                <option value="internetArticle">Referência de Artigo de Internet</option>
+                <option value="constitution">Referência de Constituição Federal</option>
+            </select>
+        </div>
+
+        <div class="forms">
+            <form id="bookForm" class="reference-form">
+                <h2>Referência de Livro</h2>
+                <label for="bookTitle">Título do Livro:</label>
+                <input type="text" id="bookTitle" required>
+
+                <label for="author">Autor:</label>
+                <input type="text" id="author" required>
+
+                <label for="publicationYear">Ano de Publicação:</label>
+                <input type="text" id="publicationYear" required>
+
+                <label for="publisher">Editora:</label>
+                <input type="text" id="publisher" required>
+            </form>
+
+            <form id="siteForm" class="reference-form">
+                <h2>Referência de Site</h2>
+                <label for="siteTitle">Título do Site:</label>
+                <input type="text" id="siteTitle" required>
+
+                <label for="url">URL:</label>
+                <input type="url" id="url" required>
+
+                <label for="accessDate">Data de Acesso:</label>
+                <input type="date" id="accessDate" required>
+            </form>
+
+            <form id="articleForm" class="reference-form">
+                <h2>Referência de Artigo de Revista</h2>
+                <label for="articleTitle">Título do Artigo:</label>
+                <input type="text" id="articleTitle" required>
+
+                <label for="journal">Nome da Revista:</label>
+                <input type="text" id="journal" required>
+
+                <label for="volume">Volume:</label>
+                <input type="text" id="volume" required>
+
+                <label for="pages">Páginas:</label>
+                <input type="text" id="pages" required>
+            </form>
+
+            <form id="internetArticleForm" class="reference-form">
+                <h2>Referência de Artigo de Internet</h2>
+                <label for="internetArticleTitle">Título do Artigo:</label>
+                <input type="text" id="internetArticleTitle" required>
+
+                <label for="website">Nome do Site:</label>
+                <input type="text" id="website" required>
+
+                <label for="publicationDate">Data de Publicação:</label>
+                <input type="date" id="publicationDate" required>
+
+                <label for="articleUrl">URL do Artigo:</label>
+                <input type="url" id="articleUrl" required>
+            </form>
+
+            <form id="constitutionForm" class="reference-form">
+                <h2>Referência de Constituição Federal</h2>
+                <label for="constitutionTitle">Título da Constituição:</label>
+                <input type="text" id="constitutionTitle" required>
+
+                <label for="constitutionYear">Ano:</label>
+                <input type="text" id="constitutionYear" required>
+
+                <label for="constitutionChapter">Capítulo:</label>
+                <input type="text" id="constitutionChapter">
+
+                <label for="constitutionArticle">Artigo:</label>
+                <input type="text" id="constitutionArticle" required>
+            </form>
+        </div>
+
+        <div id="output-container">
+            <h2>Referência Gerada</h2>
+            <textarea id="output" readonly></textarea>
+        </div>
+    </div>
+</body>
+</html>
